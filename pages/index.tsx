@@ -20,30 +20,25 @@ const Home: NextPage = () => {
     <MyComponent title="It works!" />
 
     <Wrapper><MyComponent title="testing wrapping children between my wrapper component" /><Title title="test" /><Title title="test" /></Wrapper>
-    
-    <ul> {foodList.map((item, index) => {
-      return (
-        <li key={index}>{item}</li>
-      )
-    })}
-    </ul>
-    <br/>
-    <h3>passing food List as prop to component Food:</h3>
-    <ul><Food foodList={foodList} /></ul>
 
-    
-    <Button>Click me!</Button>  
+    <ul>{foodList.map(item => <li key={item}>{item}</li>)}</ul>
+    <br />
+
+    <Food foodList={foodList} />
+
+
+    <Button>Click me!</Button>
     <Button href="about">About page</Button>
     <br />
     <br />
-    
-  
-    <Alert updateInputValue={setInputValue} isClickedState={isClicked} updateIsClicked={setIsClicked}  />
-    
+
+
+    <Alert updateInputValue={setInputValue} isClickedState={isClicked} updateIsClicked={setIsClicked} />
+
     {isClicked && <p>{inputValue}</p>}
-    
-    
-   
+
+
+
 
   </>
 

@@ -3,13 +3,13 @@ const Button = (props: any) => {
         console.log("Clicked", event.currentTarget)
 
     }
-    if(props.href) { 
-       return <button><a href={props.href}>
-            {props.children} 
+    if (props.href) {
+        return <button><a href={props.href}>
+            {props.children}
         </a></button>
     }
     return <button onClick={handleClick}>
-    {props.children}
+        {props.children}
     </button>
 
 }

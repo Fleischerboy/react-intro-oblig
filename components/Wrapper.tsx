@@ -3,7 +3,8 @@ import Title from "./Title"
 
 
 const Wrapper = (props: any) => {
-    return <section className="flex">{props.children}</section>
+    const { children } = props;
+    return <section className="flex">{children}</section>
 }
 
 

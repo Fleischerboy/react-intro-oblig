@@ -1,11 +1,11 @@
 import Title from "./Title";
 
 type MyComponentProps = {
-title: string
+    title: string
 }
 
 
 export default function MyComponent(props: MyComponentProps) {
-    const {title} = props;
-    return <Title title={title}/>
+    const { title } = props;
+    return <Title title={title} />
 }
