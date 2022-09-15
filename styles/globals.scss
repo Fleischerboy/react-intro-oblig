@@ -153,8 +153,22 @@ input {
 
 
 .flex {
+
+
+// flex
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+width: 1170px;
+height: 250px;
+max-width: 100%;
 border : solid black 2px;
-margin: 10px;
+margin: 0 auto;
+padding: 0 16px;
+max-width: 100%;
 
 
 
